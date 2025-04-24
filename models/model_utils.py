@@ -189,6 +189,9 @@ class DenseNetLit(L.LightningModule):
         probabilities = torch.softmax(logits, dim=1)
         self.train_batch_outputs.append({"probabilities": probabilities, "y": y})
         self.log("train_loss", loss, on_step=True, on_epoch=True)
+        self.log(
+            "lr", self.optimizers().param_groups[0]["lr"], on_step=True, on_epoch=True
+        )
         return loss
 
     def on_train_epoch_end(self):
@@ -239,7 +242,7 @@ class DenseNetLit(L.LightningModule):
         scheduler = torch.optim.lr_scheduler.OneCycleLR(
             optimizer=optimizer,
             max_lr=4.0,
-            steps_per_epoch=22,
+            steps_per_epoch=98,
             epochs=50,
             div_factor=40,
             final_div_factor=40,
@@ -249,5 +252,7 @@ class DenseNetLit(L.LightningModule):
             "lr_scheduler": {
                 "scheduler": scheduler,
                 "interval": "step",
+                "frequency": 1,
+                "strict": False,
             },
         }
