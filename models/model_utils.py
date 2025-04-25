@@ -161,6 +161,7 @@ class DenseNetLit(L.LightningModule):
                 "auroc": torchmetrics.AUROC(
                     task=TASK, num_classes=NUM_CLASSES, average="macro"
                 ),
+                "accuracy": torchmetrics.Accuracy(task=TASK, num_classes=NUM_CLASSES),
             },
             prefix="train_",
         )
@@ -243,7 +244,7 @@ class DenseNetLit(L.LightningModule):
             optimizer=optimizer,
             max_lr=4.0,
             steps_per_epoch=98,
-            epochs=50,
+            epochs=150,
             div_factor=40,
             final_div_factor=40,
         )
