@@ -5,7 +5,7 @@ import torchmetrics
 
 
 TASK = "multiclass"
-NUM_CLASSES = 10  # CIFAR-10 has 10 classes
+NUM_CLASSES = 10
 
 
 class _BNReLUConv(nn.Sequential):
