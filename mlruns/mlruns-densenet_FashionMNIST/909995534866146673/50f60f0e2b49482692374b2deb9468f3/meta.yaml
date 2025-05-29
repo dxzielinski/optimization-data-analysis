@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/909995534866146673/50f60f0e2b49482692374b2deb9468f3/artifacts
+end_time: 1748546988247
+entry_point_name: ''
+experiment_id: '909995534866146673'
+lifecycle_stage: active
+run_id: 50f60f0e2b49482692374b2deb9468f3
+run_name: resilient-ant-663
+run_uuid: 50f60f0e2b49482692374b2deb9468f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748546296485
+status: 3
+tags: []
+user_id: root
