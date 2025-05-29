@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/130205337055641038/cea50bf39536439f86a780b414c0c066/artifacts
+end_time: 1748540920436
+entry_point_name: ''
+experiment_id: '130205337055641038'
+lifecycle_stage: active
+run_id: cea50bf39536439f86a780b414c0c066
+run_name: chill-donkey-505
+run_uuid: cea50bf39536439f86a780b414c0c066
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748540919382
+status: 4
+tags: []
+user_id: root
