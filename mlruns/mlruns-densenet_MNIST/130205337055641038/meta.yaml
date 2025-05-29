@@ -1,0 +1,6 @@
+artifact_location: file:///content/mlruns/130205337055641038
+creation_time: 1748540858894
+experiment_id: '130205337055641038'
+last_update_time: 1748540858894
+lifecycle_stage: active
+name: DenseNet
