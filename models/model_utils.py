@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import lightning as L
 import torchmetrics
+from torchvision.models.resnet import wide_resnet50_2
 
 
 TASK = "multiclass"
@@ -240,13 +241,41 @@ class DenseNetLit(L.LightningModule):
         optimizer = torch.optim.SGD(
             self.model.parameters(), lr=0.1, weight_decay=10e-6, momentum=0.9
         )
+        total_steps = self.trainer.estimated_stepping_batches
         scheduler = torch.optim.lr_scheduler.OneCycleLR(
             optimizer=optimizer,
             max_lr=4.0,
-            steps_per_epoch=98,
-            epochs=150,
+            total_steps=total_steps,
             div_factor=40,
             final_div_factor=40,
+        )
+        return {
+            "optimizer": optimizer,
+            "lr_scheduler": {
+                "scheduler": scheduler,
+                "interval": "step",
+                "frequency": 1,
+                "strict": False,
+            },
+        }
+
+
+class WideResnetLit(DenseNetLit):
+    def __init__(self, hyperparameters):
+        super().__init__(hyperparameters)
+        self.model = wide_resnet50_2(pretrained=False, num_classes=NUM_CLASSES)
+
+    def configure_optimizers(self):
+        optimizer = torch.optim.SGD(
+            self.model.parameters(), lr=0.1, weight_decay=10e-4, momentum=0.9
+        )
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(
+            optimizer=optimizer,
+            max_lr=1.0,
+            steps_per_epoch=98,
+            epochs=50,
+            div_factor=10,
+            final_div_factor=10,
         )
         return {
             "optimizer": optimizer,
