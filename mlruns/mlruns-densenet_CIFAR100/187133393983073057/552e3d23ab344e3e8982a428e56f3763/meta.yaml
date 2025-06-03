@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/grioool/PycharmProjects/optimization-data-analysis/models/mlruns/187133393983073057/552e3d23ab344e3e8982a428e56f3763/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '187133393983073057'
+lifecycle_stage: active
+run_id: 552e3d23ab344e3e8982a428e56f3763
+run_name: awesome-penguin-948
+run_uuid: 552e3d23ab344e3e8982a428e56f3763
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748535098630
+status: 1
+tags: []
+user_id: grioool

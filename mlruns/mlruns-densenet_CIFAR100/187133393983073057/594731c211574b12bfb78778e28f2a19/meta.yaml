@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/grioool/PycharmProjects/optimization-data-analysis/models/mlruns/187133393983073057/594731c211574b12bfb78778e28f2a19/artifacts
+end_time: 1748587547550
+entry_point_name: ''
+experiment_id: '187133393983073057'
+lifecycle_stage: active
+run_id: 594731c211574b12bfb78778e28f2a19
+run_name: bald-dove-457
+run_uuid: 594731c211574b12bfb78778e28f2a19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748536651699
+status: 3
+tags: []
+user_id: grioool

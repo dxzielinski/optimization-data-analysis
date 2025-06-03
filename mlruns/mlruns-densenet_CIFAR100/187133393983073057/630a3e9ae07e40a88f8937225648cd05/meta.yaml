@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/grioool/PycharmProjects/optimization-data-analysis/models/mlruns/187133393983073057/630a3e9ae07e40a88f8937225648cd05/artifacts
+end_time: 1748536269366
+entry_point_name: ''
+experiment_id: '187133393983073057'
+lifecycle_stage: active
+run_id: 630a3e9ae07e40a88f8937225648cd05
+run_name: intelligent-owl-419
+run_uuid: 630a3e9ae07e40a88f8937225648cd05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748535875953
+status: 4
+tags: []
+user_id: grioool
