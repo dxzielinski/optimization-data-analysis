@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/837076260771781021/ebb53ccd264b443d9eb7e44c2f799f78/artifacts
+end_time: 1749032151238
+entry_point_name: ''
+experiment_id: '837076260771781021'
+lifecycle_stage: active
+run_id: ebb53ccd264b443d9eb7e44c2f799f78
+run_name: classy-skink-104
+run_uuid: ebb53ccd264b443d9eb7e44c2f799f78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749032149349
+status: 4
+tags: []
+user_id: root
