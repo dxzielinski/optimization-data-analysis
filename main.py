@@ -15,10 +15,21 @@ with open("test_indices.txt", "r") as f:
     test_indices = [int(line.strip()) for line in f.readlines()]
 
 
+class DataModule(L.LightningDataModule):
+    def __init__(self, test_loader):
+        super().__init__()
+        self.test_loader = test_loader
+
+    def test_dataloader(self):
+        return self.test_loader
+
+
 def main():
+    torch.set_float32_matmul_precision("high")
+    L.seed_everything(42)
     model = WideResnetLit.load_from_checkpoint(checkpoint_path)
     trainer = L.Trainer(
-        logger=None,
+        logger=False,
         enable_progress_bar=True,
     )
     IMAGE_SIZE = 32
@@ -45,4 +56,9 @@ def main():
         shuffle=False,
         num_workers=4,
     )
-    trainer.test(model, datamodule=test_loader)
+    data = DataModule(test_loader)
+    trainer.test(model, datamodule=data)
+
+
+if __name__ == "__main__":
+    main()
