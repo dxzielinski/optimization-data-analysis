@@ -21,8 +21,8 @@ class OneCycleScheduler:
         self.base_lr = base_lr or max_lr / 10.0
         self.final_lr = self.base_lr / final_div_factor
         self.pct_start = 0.5
-        self.cycle_length = cycle_length + 1
-        self.up_steps = max(1, int(cycle_length * pct_start))
+        self.cycle_length = float(cycle_length) + 1
+        self.up_steps = cycle_length * pct_start
         self.down_steps = cycle_length - self.up_steps
         self.step_num = 1
         self.anneal_strategy = anneal_strategy
@@ -32,21 +32,8 @@ class OneCycleScheduler:
                 "Choose either 'cos' or 'linear'."
             )
 
-        # initialize
         for pg in self.optimizer.param_groups:
             pg["lr"] = self.base_lr
-
-    """
-        def get_lr(self):
-            if self.step_num <= self.up_steps:
-                pct = self.step_num / float(self.up_steps)
-                return self.base_lr + pct * (self.max_lr - self.base_lr)
-            elif self.step_num <= self.cycle_length:
-                pct = (self.step_num - self.up_steps) / float(self.down_steps)
-                return self.max_lr - pct * (self.max_lr - self.final_lr)
-            else:
-                return self.final_lr
-    """
 
     def get_lr(self):
         linear = self.anneal_strategy == "linear"
