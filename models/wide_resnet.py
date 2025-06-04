@@ -177,7 +177,9 @@ class WideResnetLit(L.LightningModule):
 
         self.log("train_loss", loss, on_step=True, on_epoch=True, prog_bar=True)
         self.log("train_acc", acc, on_step=True, on_epoch=True, prog_bar=True)
-
+        self.log(
+            "lr", self.optimizers().param_groups[0]["lr"], on_step=True, on_epoch=True
+        )
         return loss
 
     def validation_step(self, batch, batch_idx):
