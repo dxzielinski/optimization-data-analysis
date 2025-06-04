@@ -1,0 +1,6 @@
+artifact_location: file:///content/mlruns/400150885500145292
+creation_time: 1749065979239
+experiment_id: '400150885500145292'
+last_update_time: 1749065979239
+lifecycle_stage: active
+name: WideResnet
