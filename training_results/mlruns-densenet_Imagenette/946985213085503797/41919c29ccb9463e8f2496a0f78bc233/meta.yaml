@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/946985213085503797/41919c29ccb9463e8f2496a0f78bc233/artifacts
+end_time: 1749077957105
+entry_point_name: ''
+experiment_id: '946985213085503797'
+lifecycle_stage: active
+run_id: 41919c29ccb9463e8f2496a0f78bc233
+run_name: mysterious-snipe-115
+run_uuid: 41919c29ccb9463e8f2496a0f78bc233
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749077920896
+status: 4
+tags: []
+user_id: root

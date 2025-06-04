@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/946985213085503797/36b494198d08486d97dbe307cb6fb902/artifacts
+end_time: 1749081103693
+entry_point_name: ''
+experiment_id: '946985213085503797'
+lifecycle_stage: active
+run_id: 36b494198d08486d97dbe307cb6fb902
+run_name: flawless-koi-288
+run_uuid: 36b494198d08486d97dbe307cb6fb902
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749078107863
+status: 3
+tags: []
+user_id: root
