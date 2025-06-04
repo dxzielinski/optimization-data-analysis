@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/371194915541646024/70271039b33d4d988444ca193d71b483/artifacts
+end_time: 1748544761919
+entry_point_name: ''
+experiment_id: '371194915541646024'
+lifecycle_stage: active
+run_id: 70271039b33d4d988444ca193d71b483
+run_name: delicate-sheep-766
+run_uuid: 70271039b33d4d988444ca193d71b483
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748544761022
+status: 4
+tags: []
+user_id: root

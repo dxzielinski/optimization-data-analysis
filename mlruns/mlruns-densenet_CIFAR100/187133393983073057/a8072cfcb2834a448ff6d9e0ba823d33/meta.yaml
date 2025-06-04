@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/grioool/PycharmProjects/optimization-data-analysis/models/mlruns/187133393983073057/a8072cfcb2834a448ff6d9e0ba823d33/artifacts
+end_time: 1748536545689
+entry_point_name: ''
+experiment_id: '187133393983073057'
+lifecycle_stage: active
+run_id: a8072cfcb2834a448ff6d9e0ba823d33
+run_name: nervous-carp-684
+run_uuid: a8072cfcb2834a448ff6d9e0ba823d33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748536538556
+status: 4
+tags: []
+user_id: grioool

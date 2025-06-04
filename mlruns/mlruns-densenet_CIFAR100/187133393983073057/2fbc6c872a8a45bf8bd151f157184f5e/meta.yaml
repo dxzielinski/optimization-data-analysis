@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/grioool/PycharmProjects/optimization-data-analysis/models/mlruns/187133393983073057/2fbc6c872a8a45bf8bd151f157184f5e/artifacts
+end_time: 1748535010563
+entry_point_name: ''
+experiment_id: '187133393983073057'
+lifecycle_stage: active
+run_id: 2fbc6c872a8a45bf8bd151f157184f5e
+run_name: judicious-toad-120
+run_uuid: 2fbc6c872a8a45bf8bd151f157184f5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748534969931
+status: 4
+tags: []
+user_id: grioool

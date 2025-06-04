@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/371194915541646024/54951f030c56434d9e02e3518a74488f/artifacts
+end_time: 1748545734130
+entry_point_name: ''
+experiment_id: '371194915541646024'
+lifecycle_stage: active
+run_id: 54951f030c56434d9e02e3518a74488f
+run_name: funny-doe-421
+run_uuid: 54951f030c56434d9e02e3518a74488f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748544809757
+status: 3
+tags: []
+user_id: root
