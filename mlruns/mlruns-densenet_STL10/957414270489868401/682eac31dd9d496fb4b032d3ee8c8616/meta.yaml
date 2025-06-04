@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/957414270489868401/682eac31dd9d496fb4b032d3ee8c8616/artifacts
+end_time: 1749029869261
+entry_point_name: ''
+experiment_id: '957414270489868401'
+lifecycle_stage: active
+run_id: 682eac31dd9d496fb4b032d3ee8c8616
+run_name: overjoyed-vole-41
+run_uuid: 682eac31dd9d496fb4b032d3ee8c8616
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749029733570
+status: 3
+tags: []
+user_id: root
